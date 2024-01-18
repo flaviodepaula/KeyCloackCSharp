@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{97F6805E-76A3-491C-A103-61E460E568B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7106D140-F764-4B28-89E6-DD82C34A5C26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Repository", "Infra.Repository", "{748B3046-8619-4B1A-B1E1-346E7916B90E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.External", "Infra.External", "{7A68EE70-E1E7-4CEE-94DE-095B1369C4BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Support", "Support", "{B892CEF3-B41A-414A-A991-358388ACC9D7}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.External", "Infra.External\Infra.External.csproj", "{FD04483F-1D7A-4413-AA1E-3922FE8FB563}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Repository", "Infra.Repository\Infra.Repository.csproj", "{0E85E460-BCE0-4E39-99D6-483E4079FB6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD04483F-1D7A-4413-AA1E-3922FE8FB563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD04483F-1D7A-4413-AA1E-3922FE8FB563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD04483F-1D7A-4413-AA1E-3922FE8FB563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD04483F-1D7A-4413-AA1E-3922FE8FB563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9281E7A-BDFF-4793-8C1D-C7B399A22A8C} = {97F6805E-76A3-491C-A103-61E460E568B4}
+		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA} = {7106D140-F764-4B28-89E6-DD82C34A5C26}
+		{FD04483F-1D7A-4413-AA1E-3922FE8FB563} = {7A68EE70-E1E7-4CEE-94DE-095B1369C4BF}
+		{0E85E460-BCE0-4E39-99D6-483E4079FB6F} = {748B3046-8619-4B1A-B1E1-346E7916B90E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F56ED087-2E44-4746-A699-8BBB1D5724CA}
+	EndGlobalSection
+EndGlobal
