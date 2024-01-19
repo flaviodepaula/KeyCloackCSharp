@@ -1,0 +1,32 @@
+{
+  "id": "keyCloack_Example",
+  "realm": "Realm_Example",
+  "sslRequired": "none",
+  "enabled": true,
+  "clients": [
+    {
+      "id": "test_client",
+      "clientId": "test_client_id",
+      "secret": "teste_client_secret",
+      "name": "teste_client",
+      "enabled": true,
+      "directAccessGrantsEnabled": true,
+      "clientAuthenticatorType": "Client Id and Secret",
+      "authorizationServicesEnabled": true
+    }
+  ],
+  "users": [
+    {
+      "id": "admin",
+      "username": "admin",
+      "enabled": true,
+      "credentials": [
+        {
+          "temporary": false,
+          "type": "password",
+          "value": "admin"
+        }
+      ]
+    }
+  ]
+}

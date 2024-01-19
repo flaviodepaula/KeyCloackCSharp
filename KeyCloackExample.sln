@@ -17,14 +17,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Support", "Support", "{B892
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
 		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
 		README.md = README.md
+		realm-config.json = realm-config.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.External", "Infra.External\Infra.External.csproj", "{FD04483F-1D7A-4413-AA1E-3922FE8FB563}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.External", "Infra.External\Infra.External.csproj", "{FD04483F-1D7A-4413-AA1E-3922FE8FB563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Repository", "Infra.Repository\Infra.Repository.csproj", "{0E85E460-BCE0-4E39-99D6-483E4079FB6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Repository", "Infra.Repository\Infra.Repository.csproj", "{0E85E460-BCE0-4E39-99D6-483E4079FB6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{903F534B-7343-47E9-9CFE-FB36E3C1598C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegratedTest", "IntegratedTest", "{D466C670-9FD1-49B4-9306-88CCE1044A86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{FD537FC4-0FF4-428E-8D78-D51B33FBB1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +58,10 @@ Global
 		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E85E460-BCE0-4E39-99D6-483E4079FB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +71,9 @@ Global
 		{D8933DB0-F9F9-43E7-A26B-849C0A4F1CAA} = {7106D140-F764-4B28-89E6-DD82C34A5C26}
 		{FD04483F-1D7A-4413-AA1E-3922FE8FB563} = {7A68EE70-E1E7-4CEE-94DE-095B1369C4BF}
 		{0E85E460-BCE0-4E39-99D6-483E4079FB6F} = {748B3046-8619-4B1A-B1E1-346E7916B90E}
+		{D466C670-9FD1-49B4-9306-88CCE1044A86} = {903F534B-7343-47E9-9CFE-FB36E3C1598C}
+		{FD537FC4-0FF4-428E-8D78-D51B33FBB1BF} = {903F534B-7343-47E9-9CFE-FB36E3C1598C}
+		{D2F3185D-69EA-4A9C-B72B-E8A86D81F34E} = {FD537FC4-0FF4-428E-8D78-D51B33FBB1BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F56ED087-2E44-4746-A699-8BBB1D5724CA}

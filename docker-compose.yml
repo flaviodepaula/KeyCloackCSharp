@@ -1,0 +1,47 @@
+version: '3.4'
+
+volumes:
+  postgres_data:
+      driver: local
+
+services:
+  postgresql:
+   image: postgres:16.0
+   networks:
+     - backend
+   volumes:
+     - postgres_data:/var/lib/postgresql/data/
+     - ./sql:/docker-entrypoint-initdb.d/:ro
+   environment:
+    POSTGRES_DB: keycloak
+    POSTGRES_USER: keycloak
+    POSTGRES_PASSWORD: postgres
+    TZ: UTC
+   ports:
+     - "5432:5432"
+
+  keycloack:
+    image: quay.io/keycloak/keycloak:22.0
+    volumes:
+     - ./realm-config.json:/opt/keycloak/data/import/realm-config.json:ro
+    restart: always
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PASSWORD: postgres
+      DB_SCHEMA: public
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      TZ: UTC
+    ports:
+      - 8080:8080
+    command: -v start-dev --import-realm
+    depends_on:
+     - postgresql        
+
+networks:
+  backend:
+    name: backend
+    driver: bridge
