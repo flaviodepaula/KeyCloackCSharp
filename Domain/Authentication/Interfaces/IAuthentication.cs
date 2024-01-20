@@ -1,9 +1,10 @@
 ﻿using Domain.Authentication.Models;
+using Infra.Common;
 
 namespace Domain.Authentication.Interfaces
 {
     public interface IAuthentication
     {
-        Task<AuthenticationResponseModel> GetAuthenticationTokenAsync(AuthenticationRequestModel authenticationRequestModel, CancellationToken cancellationToken);
+        Task<Result<AuthenticationResponseModel>> GetAuthenticationTokenAsync(AuthenticationRequestModel authenticationRequestModel, CancellationToken cancellationToken);
     }
 }
